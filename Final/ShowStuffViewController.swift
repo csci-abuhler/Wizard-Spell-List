@@ -2,34 +2,29 @@
 //  ShowStuffViewController.swift
 //  Final
 //
-//  Created by Andrew Dudley on 12/7/17.
-//  Copyright © 2017 Andrew Dudley. All rights reserved.
-//
 
 import UIKit
 
 class ShowStuffViewController: UIViewController {
-
+    var spellDescription = ""
+    var schoolDescription = ""
+    var levelDescription = ""
+    var name = ""
+    
+    @IBOutlet weak var spellName: UITextView!
+    @IBOutlet weak var spellLevel: UITextView!
+    @IBOutlet weak var schoolText: UITextView!
+    @IBOutlet weak var showText: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        showText.text = spellDescription
+        schoolText.text = schoolDescription
+        spellLevel.text = "Level: " + levelDescription
+        spellName.text = name
+    } // view did load
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+    } // memory warning
+} // class

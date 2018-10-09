@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4C0BEC681FD9E2E5005275C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BEC671FD9E2E5005275C1 /* AppDelegate.swift */; };
-		4C0BEC6A1FD9E2E5005275C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BEC691FD9E2E5005275C1 /* ViewController.swift */; };
 		4C0BEC6D1FD9E2E5005275C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BEC6B1FD9E2E5005275C1 /* Main.storyboard */; };
 		4C0BEC6F1FD9E2E5005275C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BEC6E1FD9E2E5005275C1 /* Assets.xcassets */; };
 		4C0BEC721FD9E2E5005275C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0BEC701FD9E2E5005275C1 /* LaunchScreen.storyboard */; };
+		4C0BEC7A1FD9E392005275C1 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BEC791FD9E392005275C1 /* MyTableViewController.swift */; };
+		4C0BEC7C1FD9E952005275C1 /* ShowStuffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BEC7B1FD9E952005275C1 /* ShowStuffViewController.swift */; };
+		4C0BEC7E1FDA1910005275C1 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0BEC7D1FDA1910005275C1 /* Spell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C0BEC641FD9E2E5005275C1 /* Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0BEC671FD9E2E5005275C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C0BEC691FD9E2E5005275C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C0BEC6C1FD9E2E5005275C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0BEC6E1FD9E2E5005275C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0BEC711FD9E2E5005275C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0BEC731FD9E2E5005275C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0BEC791FD9E392005275C1 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		4C0BEC7B1FD9E952005275C1 /* ShowStuffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowStuffViewController.swift; sourceTree = "<group>"; };
+		4C0BEC7D1FDA1910005275C1 /* Spell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				4C0BEC671FD9E2E5005275C1 /* AppDelegate.swift */,
-				4C0BEC691FD9E2E5005275C1 /* ViewController.swift */,
 				4C0BEC6B1FD9E2E5005275C1 /* Main.storyboard */,
+				4C0BEC7B1FD9E952005275C1 /* ShowStuffViewController.swift */,
+				4C0BEC791FD9E392005275C1 /* MyTableViewController.swift */,
 				4C0BEC6E1FD9E2E5005275C1 /* Assets.xcassets */,
 				4C0BEC701FD9E2E5005275C1 /* LaunchScreen.storyboard */,
 				4C0BEC731FD9E2E5005275C1 /* Info.plist */,
+				4C0BEC7D1FDA1910005275C1 /* Spell.swift */,
 			);
 			path = Final;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0BEC6A1FD9E2E5005275C1 /* ViewController.swift in Sources */,
+				4C0BEC7C1FD9E952005275C1 /* ShowStuffViewController.swift in Sources */,
 				4C0BEC681FD9E2E5005275C1 /* AppDelegate.swift in Sources */,
+				4C0BEC7E1FDA1910005275C1 /* Spell.swift in Sources */,
+				4C0BEC7A1FD9E392005275C1 /* MyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XM8U9N36T;
 				INFOPLIST_FILE = Final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Final;
@@ -289,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XM8U9N36T;
 				INFOPLIST_FILE = Final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Final;

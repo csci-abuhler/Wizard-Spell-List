@@ -2,8 +2,12 @@
 //  Spell.swift
 //  Final
 //
-//  Created by Andrew Dudley on 12/7/17.
-//  Copyright © 2017 Andrew Dudley. All rights reserved.
-//
 
 import Foundation
+
+struct Spell {
+    let level : String
+    let name : String
+    let school : String
+    let description : String
+} // spell
